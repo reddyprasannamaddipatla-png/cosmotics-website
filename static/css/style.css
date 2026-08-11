@@ -1557,6 +1557,69 @@ section {
 }
 
 /* -------------------------------------------------------------
+   DEVELOPER WATERMARK STYLING
+   ------------------------------------------------------------- */
+.developer-watermark {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.developer-watermark i {
+  color: var(--accent);
+}
+
+.watermark-brand {
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(233, 30, 99, 0.15);
+}
+
+.floating-watermark {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 998;
+  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(12px);
+  color: #FFFFFF;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.floating-watermark i {
+  color: #E91E63;
+  font-size: 0.9rem;
+}
+
+.floating-watermark span {
+  font-weight: 700;
+  background: linear-gradient(135deg, #FF6090, #E91E63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.floating-watermark:hover {
+  transform: translateY(-3px) scale(1.03);
+  border-color: rgba(233, 30, 99, 0.5);
+  box-shadow: 0 12px 30px rgba(233, 30, 99, 0.3);
+}
+
+/* -------------------------------------------------------------
    RESPONSIVE DESIGN (MOBILE FIRST OVERRIDES)
    ------------------------------------------------------------- */
 @media (max-width: 1024px) {
