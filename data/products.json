@@ -1,0 +1,178 @@
+[
+  {
+    "id": "PROD-001",
+    "name": "Rose Quartz Hydrating Serum",
+    "category": "Skincare",
+    "price": 48.00,
+    "original_price": 60.00,
+    "description": "Infused with pure rose quartz extract and multi-weight hyaluronic acid, this weightless radiance serum intensely hydrates, plumps fine lines, and delivers a luminous, glass-skin finish.",
+    "benefits": [
+      "Deep 72-hour moisture lock",
+      "Visibly restores youthful skin glow",
+      "Calms redness and reduces inflammation",
+      "Lightweight non-greasy absorption"
+    ],
+    "ingredients": "Aqua (Water), Rosa Damascena Flower Water, Sodium Hyaluronate, Quartz Extract, Niacinamide, Glycerin, Organic Aloe Barbadensis Leaf Juice, Camellia Sinensis Leaf Extract, Phenoxyethanol, Ethylhexylglycerin.",
+    "how_to_use": "Apply 3-4 drops onto clean face and neck every morning and evening. Gently press into skin with fingertips using upward sweeping motions before your moisturizer.",
+    "image": "/static/images/prod_serum.png",
+    "status": "Active",
+    "rating": 4.9,
+    "review_count": 128,
+    "is_featured": true,
+    "createdAt": "2026-08-01 10:00:00"
+  },
+  {
+    "id": "PROD-002",
+    "name": "Velvet Rose Matte Lipstick",
+    "category": "Makeup",
+    "price": 32.00,
+    "original_price": 38.00,
+    "description": "A velvety-smooth, weightless liquid lipstick offering up to 12 hours of rich, hydrating berry-rose color that never dries out your lips.",
+    "benefits": [
+      "12-Hour smudge-proof wear",
+      "Infused with Vitamin E and Jojoba Oil",
+      "Soft velvet finish with zero cracking",
+      "Precision teardrop applicator"
+    ],
+    "ingredients": "Isododecane, Dimethicone, Trimethylsiloxysilicate, Synthetic Wax, Tocopheryl Acetate (Vitamin E), Simmondsia Chinensis (Jojoba) Seed Oil, Rosa Canina Fruit Oil, CI 77891, CI 15850, CI 77491.",
+    "how_to_use": "Outline lips using the precision tip of the wand, then fill in with soft even strokes. Allow 60 seconds to set into a transfer-resistant matte finish.",
+    "image": "/static/images/prod_lipstick.png",
+    "status": "Active",
+    "rating": 4.8,
+    "review_count": 95,
+    "is_featured": true,
+    "createdAt": "2026-08-02 11:30:00"
+  },
+  {
+    "id": "PROD-003",
+    "name": "Botanical Hydra Repair Cream",
+    "category": "Skincare",
+    "price": 56.00,
+    "original_price": 70.00,
+    "description": "Rich velvet repair moisturizer enriched with botanical ceramides, shea butter, and peony blossom elixir to soothe skin barriers overnight.",
+    "benefits": [
+      "Repairs compromised skin barrier",
+      "Provides rich overnight nourishment",
+      "Diminishes roughness and dry flakes",
+      "Suitable for all skin types, including sensitive"
+    ],
+    "ingredients": "Aqua, Butyrospermum Parkii (Shea) Butter, Peony Extract, Ceramide NP, Ceramide AP, Phytosphingosine, Squalane, Cetearyl Alcohol, Glycerin, Rosa Extract.",
+    "how_to_use": "Warm a pea-sized amount between fingertips and massage gently onto clean face, neck, and décolletage as the final step in your evening routine.",
+    "image": "/static/images/prod_cream.png",
+    "status": "Active",
+    "rating": 5.0,
+    "review_count": 210,
+    "is_featured": true,
+    "createdAt": "2026-08-03 09:15:00"
+  },
+  {
+    "id": "PROD-004",
+    "name": "Golden Elixir Hair Nourishing Treatment",
+    "category": "Haircare",
+    "price": 42.00,
+    "original_price": 50.00,
+    "description": "Luxurious lightweight hair serum crafted with cold-pressed Moroccan Argan Oil and Camellia essence for brilliant shine, heat protection, and silky softness.",
+    "benefits": [
+      "Tames frizz and seal split ends instantly",
+      "Heat protection up to 230°C / 450°F",
+      "Enhances natural shine without weighing hair down",
+      "Delicate signature floral scent"
+    ],
+    "ingredients": "Cyclopentasiloxane, Dimethiconol, Argania Spinosa Kernel Oil, Camellia Japonica Seed Oil, Sweet Almond Oil, Parfum, Tocopherol.",
+    "how_to_use": "Rub 1-2 pumps between palms and apply through mid-lengths to ends on damp or dry hair. Do not rinse.",
+    "image": "/static/images/cat_haircare.png",
+    "status": "Active",
+    "rating": 4.9,
+    "review_count": 87,
+    "is_featured": true,
+    "createdAt": "2026-08-04 14:00:00"
+  },
+  {
+    "id": "PROD-005",
+    "name": "Blossom Royale Eau De Parfum",
+    "category": "Fragrances",
+    "price": 85.00,
+    "original_price": 105.00,
+    "description": "An enchanting floral fragrance featuring top notes of Fresh Bergamot and Pear, a heart of Damask Rose and White Peony, and a base of Soft Vanilla Musk.",
+    "benefits": [
+      "Long-lasting 24-hour scent trail",
+      "Handcrafted luxury crystal bottle with rose gold cap",
+      "Hypoallergenic and paraben-free formulation",
+      "Elegantly gift-boxed"
+    ],
+    "ingredients": "Alcohol Denat., Fragrance (Parfum), Water (Aqua), Rosa Damascena Flower Extract, Bergamot Peel Oil, White Musk Accord, Limonene, Linalool, Citronellol.",
+    "how_to_use": "Spritz lightly onto pulse points—wrists, neck, and behind ears. Do not rub wrists together to preserve fragrance top notes.",
+    "image": "/static/images/cat_fragrance.png",
+    "status": "Active",
+    "rating": 5.0,
+    "review_count": 164,
+    "is_featured": true,
+    "createdAt": "2026-08-05 16:45:00"
+  },
+  {
+    "id": "PROD-006",
+    "name": "Luminous Glow Silk Primer",
+    "category": "Makeup",
+    "price": 36.00,
+    "original_price": 44.00,
+    "description": "A radiant, pearl-infused makeup primer that smooths pores, blurs imperfections, and creates an iridescent candlelit glow.",
+    "benefits": [
+      "Extends makeup longevity up to 16 hours",
+      "Pore-blurring soft-focus effect",
+      "Hydrating gel-cream formula",
+      "Non-comedogenic & breathable"
+    ],
+    "ingredients": "Water, Cyclopentasiloxane, Mica, Pearl Powder, Glycerin, Dimethicone Crosspolymer, Niacinamide, Camellia Extract, Titanium Dioxide.",
+    "how_to_use": "Smooth 1-2 pumps over clean face after skincare and allow 30 seconds to absorb before applying foundation or wearing alone for a natural glow.",
+    "image": "/static/images/cat_makeup.png",
+    "status": "Active",
+    "rating": 4.7,
+    "review_count": 72,
+    "is_featured": false,
+    "createdAt": "2026-08-06 12:00:00"
+  },
+  {
+    "id": "PROD-007",
+    "name": "Satin Scalp Detox Treatment",
+    "category": "Haircare",
+    "price": 38.00,
+    "original_price": 46.00,
+    "description": "Pre-shampoo exfoliating scalp treatment formulated with pink Himalayan salt, tea tree oil, and apple cider vinegar to remove product buildup and revitalize hair follicles.",
+    "benefits": [
+      "Purifies scalp buildup & excess oil",
+      "Stimulates healthy hair growth",
+      "Soothes itchiness and dry scalp",
+      "Color-safe formula"
+    ],
+    "ingredients": "Sodium Chloride (Pink Himalayan Salt), Water, Cocamidopropyl Betaine, Apple Cider Vinegar, Tea Tree Leaf Oil, Peppermint Extract, Rosewater.",
+    "how_to_use": "Part damp hair and massage scalp scrub into roots using gentle circular motions. Rinse thoroughly, then follow with shampoo and conditioner.",
+    "image": "/static/images/cat_haircare.png",
+    "status": "Active",
+    "rating": 4.8,
+    "review_count": 54,
+    "is_featured": false,
+    "createdAt": "2026-08-07 10:20:00"
+  },
+  {
+    "id": "PROD-008",
+    "name": "Celestial Moonlight Night Mist",
+    "category": "Fragrances",
+    "price": 64.00,
+    "original_price": 75.00,
+    "description": "A soothing pillow & body bedtime spray with French Lavender, Chamomile Blossom, and Warm Sandalwood designed to relax senses and promote restful sleep.",
+    "benefits": [
+      "Calming aromatherapy blend",
+      "Dual-use for pillow, linen, and body",
+      "Stain-free fine micro-mist",
+      "100% Organic essential oils"
+    ],
+    "ingredients": "Water (Aqua), Organic Alcohol, Lavandula Angustifolia (Lavender) Oil, Chamomilla Recutita Extract, Santalum Album (Sandalwood) Oil, Vanillin.",
+    "how_to_use": "Mist lightly over body or spray 2-3 pumps onto pillow and bed linens 10 minutes before sleep.",
+    "image": "/static/images/cat_fragrance.png",
+    "status": "Active",
+    "rating": 4.9,
+    "review_count": 91,
+    "is_featured": false,
+    "createdAt": "2026-08-08 08:30:00"
+  }
+]

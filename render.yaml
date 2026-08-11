@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cosmetics-website
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: APPS_SCRIPT_URL
+        value: https://script.google.com/macros/s/AKfycbxQ1llKXGLZ1n21ufX7rvIuO2Lh5PiYel0PPNarhSBKEg1puhvFBdORVU136vWAHxr8_w/exec

@@ -1,0 +1,34 @@
+[
+  {
+    "ID": "CNT-1786381655",
+    "Name": "Test User",
+    "Email": "test@example.com",
+    "Phone": "+1555000111",
+    "Message": "Testing luxury contact form",
+    "CreatedAt": "2026-08-10 22:37:35"
+  },
+  {
+    "ID": "CNT-1786382836",
+    "Name": "Test User",
+    "Email": "test@example.com",
+    "Phone": "+1555000111",
+    "Message": "Testing luxury contact form",
+    "CreatedAt": "2026-08-10 22:57:16"
+  },
+  {
+    "ID": "CNT-1786383262",
+    "Name": "M.Reddi Prasanna",
+    "Email": "reddyprasannamaddipatla@gmail.com",
+    "Phone": "+919949501499",
+    "Message": "I need Cosomotic Product",
+    "CreatedAt": "2026-08-10 23:04:22"
+  },
+  {
+    "ID": "CNT-1786383648",
+    "Name": "M.Reddi Prasanna",
+    "Email": "reddyprasannamaddipatla@gmail.com",
+    "Phone": "+919949501499",
+    "Message": "Hahgbhg",
+    "CreatedAt": "2026-08-10 23:10:47"
+  }
+]
