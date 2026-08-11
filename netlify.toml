@@ -1,9 +1,10 @@
-# Netlify Configuration (If hosting static assets on Netlify)
+# Netlify Configuration
 [build]
-  publish = "static"
+  publish = "."
 
-# Redirect SPA single-page routing if deploying static build
+# Redirect SPA single-page routing for static site
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
