@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aurelia Beauty - Premium Luxury Cosmetics, Organic Skincare, Haircare, Makeup, and Fragrances designed to reveal your natural beauty.">
+  <meta name="keywords" content="cosmetics, luxury beauty, skincare, makeup, haircare, fragrance, cruelty free, organic beauty">
+  <title>Aurelia Beauty | Premium Luxury Cosmetics & Skincare</title>
+  
+  <!-- FontAwesome Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- STICKY HEADER & NAVBAR -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="/" class="brand-logo" data-view="home">
+        <div class="brand-icon"><i class="fa-solid fa-gem"></i></div>
+        AURELIA <span>BEAUTY</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="/" class="nav-link active" data-view="home">Home</a>
+        <a href="/about" class="nav-link" data-view="about">About Brand</a>
+        <a href="/products" class="nav-link" data-view="products">Collection</a>
+        <a href="/contact" class="nav-link" data-view="contact">Contact Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-icon" id="wishlistTrigger" title="Wishlist" onclick="document.querySelector('[data-view=products]').click()">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge-count" id="wishlistCount">0</span>
+        </button>
+        <button class="btn-icon" id="cartTrigger" title="Shopping Bag" onclick="document.querySelector('[data-view=products]').click()">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge-count" id="cartCount">0</span>
+        </button>
+        <button class="mobile-nav-toggle" id="mobileNavToggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT VIEWS -->
+  <main>
+
+    <!-- ===================================================================
+         1. HOME PAGE VIEW
+         =================================================================== -->
+    <div class="page-view" id="view-home">
+      
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="hero-tag">
+              <i class="fa-solid fa-sparkles"></i> 100% Organic & Cruelty Free
+            </span>
+            <h1 class="hero-title">
+              Reveal Your Natural Beauty With <span>Premium Cosmetics</span>
+            </h1>
+            <p class="hero-description">
+              Discover skincare, haircare, makeup, and fragrances meticulously designed to elevate your daily beauty ritual and make you feel radiant every day.
+            </p>
+            <div class="hero-cta">
+              <button class="btn btn-primary" onclick="document.querySelector('[data-view=products]').click()">
+                Shop Collection <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <button class="btn btn-secondary" onclick="document.getElementById('categoriesSection').scrollIntoView({behavior: 'smooth'})">
+                Explore Categories
+              </button>
+            </div>
+          </div>
+          
+          <div class="hero-image-wrapper">
+            <div class="hero-img-card">
+              <img src="images/hero.png" alt="Aurelia Premium Cosmetics Banner">
+            </div>
+            
+            <div class="floating-badge floating-badge-1">
+              <div class="badge-icon"><i class="fa-solid fa-shield-heart"></i></div>
+              <div class="badge-text">
+                <h5>Dermatologist Approved</h5>
+                <p>100% Safe For Sensitive Skin</p>
+              </div>
+            </div>
+
+            <div class="floating-badge floating-badge-2">
+              <div class="badge-icon"><i class="fa-solid fa-star"></i></div>
+              <div class="badge-text">
+                <h5>4.9 / 5 Star Rating</h5>
+                <p>Over 10,000 Verified Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BRAND HIGHLIGHTS (4 CARDS) -->
+      <section class="section-bg">
+        <div class="container">
+          <div class="highlights-grid">
+            <div class="highlight-card">
+              <div class="highlight-icon-box">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <h3 class="highlight-title">100% Authentic Products</h3>
+              <p class="highlight-desc">Directly formulated and packaged in certified luxury laboratories.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon-box">
+                <i class="fa-solid fa-microscope"></i>
+              </div>
+              <h3 class="highlight-title">Dermatologically Tested</h3>
+              <p class="highlight-desc">Hypoallergenic ingredients safe for all delicate skin complexions.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon-box">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <h3 class="highlight-title">Cruelty Free</h3>
+              <p class="highlight-desc">Ethically sourced, vegan formulations with zero animal testing.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon-box">
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
+              <h3 class="highlight-title">Fast Delivery</h3>
+              <p class="highlight-desc">Express worldwide shipping with eco-friendly luxury packaging.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED CATEGORIES -->
+      <section id="categoriesSection">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Luxury Lineup</span>
+            <h2 class="section-title">Explore Featured Categories</h2>
+            <p class="section-description">Curated beauty essentials created with botanical elixirs and clinical purity.</p>
+          </div>
+
+          <div class="categories-grid">
+            <div class="category-card" data-category="Skincare">
+              <img src="images/cat_skincare.png" alt="Skincare Collection" class="category-img">
+              <div class="category-overlay">
+                <h3 class="category-name">Skincare</h3>
+                <span class="category-count">12 Luxurious Serums & Creams</span>
+                <span class="category-btn">Explore Skincare <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+            </div>
+
+            <div class="category-card" data-category="Haircare">
+              <img src="images/cat_haircare.png" alt="Haircare Collection" class="category-img">
+              <div class="category-overlay">
+                <h3 class="category-name">Haircare</h3>
+                <span class="category-count">8 Nourishing Hair Oils</span>
+                <span class="category-btn">Explore Haircare <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+            </div>
+
+            <div class="category-card" data-category="Makeup">
+              <img src="images/cat_makeup.png" alt="Makeup Collection" class="category-img">
+              <div class="category-overlay">
+                <h3 class="category-name">Makeup</h3>
+                <span class="category-count">15 Velvet Shades & Primers</span>
+                <span class="category-btn">Explore Makeup <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+            </div>
+
+            <div class="category-card" data-category="Fragrances">
+              <img src="images/cat_fragrance.png" alt="Fragrances Collection" class="category-img">
+              <div class="category-overlay">
+                <h3 class="category-name">Fragrances</h3>
+                <span class="category-count">6 Signature Perfume Sprays</span>
+                <span class="category-btn">Explore Fragrances <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PRODUCTS -->
+      <section class="section-bg">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Best Sellers</span>
+            <h2 class="section-title">Most Loved By Customers</h2>
+            <p class="section-description">Our iconic formulations adored for their instant transformation and long-lasting glow.</p>
+          </div>
+
+          <div class="products-grid" id="featuredProductsGrid">
+            <!-- Rendered dynamically by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- CUSTOMER TESTIMONIALS -->
+      <section>
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Client Stories</span>
+            <h2 class="section-title">What Beauty Lovers Say</h2>
+            <p class="section-description">Read genuine experiences from customers who made Aurelia their daily cosmetic choice.</p>
+          </div>
+
+          <div class="testimonials-slider">
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">"The Rose Quartz Serum completely transformed my dull skin in less than two weeks! People ask me what highlighter I'm wearing when it's just my natural bare face now."</p>
+              <div class="client-info">
+                <img src="images/hero.png" alt="Sophia M." class="client-avatar">
+                <div>
+                  <h4 class="client-name">Sophia Montgomery</h4>
+                  <span class="client-role">Verified Buyer</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Finally a liquid lipstick that stays on through dinner without drying out my lips! The Velvet Rose shade is my ultimate go-to signature color."</p>
+              <div class="client-info">
+                <img src="images/cat_makeup.png" alt="Elena R." class="client-avatar">
+                <div>
+                  <h4 class="client-name">Elena Rodriguez</h4>
+                  <span class="client-role">Beauty Editor</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Ordering on WhatsApp was super smooth and delivery arrived in gorgeous eco-friendly packaging within 48 hours. Aurelia is true luxury!"</p>
+              <div class="client-info">
+                <img src="images/cat_fragrance.png" alt="Chloe B." class="client-avatar">
+                <div>
+                  <h4 class="client-name">Chloe Bennett</h4>
+                  <span class="client-role">Verified Buyer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER SECTION -->
+      <section class="section-bg">
+        <div class="container">
+          <div class="newsletter-card">
+            <span class="section-subtitle">VIP Beauty Club</span>
+            <h2 class="section-title">Join The Aurelia Circle</h2>
+            <p class="section-description">Subscribe to unlock 15% off your first luxury cosmetics order and receive exclusive early access to limited edition drops.</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" class="newsletter-input" id="newsletterEmail" placeholder="Enter your email address" required>
+              <button type="submit" class="btn btn-primary">Subscribe Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ===================================================================
+         2. ABOUT PAGE VIEW
+         =================================================================== -->
+    <div class="page-view" id="view-about" style="display: none;">
+      <section class="section-bg">
+        <div class="container about-hero">
+          <span class="section-subtitle">Our Heritage</span>
+          <h1 class="hero-title" style="font-size: 3rem;">Crafting Timeless Radiance</h1>
+          <p class="hero-description" style="margin: 0 auto 30px;">
+            Aurelia Beauty was founded on a simple yet revolutionary promise: to combine pure botanical science with high-end luxury aesthetics, empowering women worldwide to embrace their authentic beauty.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Our Foundation</span>
+            <h2 class="section-title">Mission, Vision & Promise</h2>
+          </div>
+
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="highlight-icon-box"><i class="fa-solid fa-bullseye"></i></div>
+              <h3>Our Mission</h3>
+              <p style="color: var(--text-muted);">To formulate pure, high-performance cosmetic essentials that enhance natural beauty while nurturing skin health.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="highlight-icon-box"><i class="fa-solid fa-eye"></i></div>
+              <h3>Our Vision</h3>
+              <p style="color: var(--text-muted);">To redefine luxury cosmetics through sustainable practices, cruelty-free innovation, and clean formulation standards.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="highlight-icon-box"><i class="fa-solid fa-gem"></i></div>
+              <h3>Quality Promise</h3>
+              <p style="color: var(--text-muted);">Every drop of elixir, serum, and pigment undergoes rigorous clinical testing with zero compromises on efficacy.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TIMELINE SECTION -->
+      <section class="section-bg">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Our Journey</span>
+            <h2 class="section-title">Milestones Of Excellence</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2018</span>
+                <h4>Brand Inception</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Founded in Paris with our flagship Rose Quartz Hydrating Serum formulation.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2020</span>
+                <h4>Clean Beauty Certification</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Achieved 100% Leaping Bunny Cruelty-Free and vegan product verification.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2022</span>
+                <h4>Global Expansion</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Expanded luxury retail presence to over 30 countries across Europe and Asia.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2026</span>
+                <h4>Sustainable Innovation</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Pioneered 100% recyclable glass and rose gold refillable packaging across all lines.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS SECTION -->
+      <section>
+        <div class="container">
+          <div class="stats-grid">
+            <div>
+              <div class="stat-number">100K+</div>
+              <div class="stat-label">Happy Global Customers</div>
+            </div>
+            <div>
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Cruelty-Free Formulations</div>
+            </div>
+            <div>
+              <div class="stat-number">4.9★</div>
+              <div class="stat-label">Average Product Rating</div>
+            </div>
+            <div>
+              <div class="stat-number">25+</div>
+              <div class="stat-label">Award-Winning Products</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===================================================================
+         3. PRODUCTS CATALOG PAGE VIEW
+         =================================================================== -->
+    <div class="page-view" id="view-products" style="display: none;">
+      <section class="section-bg">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Catalog</span>
+            <h1 class="section-title">Luxury Cosmetics Collection</h1>
+            <p class="section-description">Filter by category, search specific formulas, or discover your next holy-grail product.</p>
+          </div>
+
+          <!-- FILTERS BAR -->
+          <div class="products-filter-bar">
+            <div class="filter-categories" id="categoryFilterPills">
+              <!-- Rendered by JS -->
+            </div>
+
+            <div class="search-box">
+              <input type="text" class="search-input" id="searchInput" placeholder="Search serum, lipstick, perfume...">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+
+            <div class="price-filter-box">
+              <span>Max Price:</span>
+              <input type="range" id="priceRangeSlider" min="20" max="150" step="5" value="100" class="price-range-slider">
+              <span id="priceDisplay" style="color: var(--accent); font-weight: 700;">$100</span>
+            </div>
+          </div>
+
+          <!-- CATALOG PRODUCTS GRID -->
+          <div class="products-grid" id="catalogProductsGrid">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===================================================================
+         4. PRODUCT DETAILS VIEW
+         =================================================================== -->
+    <div class="page-view" id="view-product-detail" style="display: none;">
+      <section>
+        <div class="container" id="productDetailContent">
+          <!-- Rendered dynamically by JavaScript -->
+        </div>
+      </section>
+    </div>
+
+    <!-- ===================================================================
+         5. CONTACT PAGE VIEW
+         =================================================================== -->
+    <div class="page-view" id="view-contact" style="display: none;">
+      <section class="section-bg">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Get In Touch</span>
+            <h1 class="section-title">We'd Love To Hear From You</h1>
+            <p class="section-description">Have questions about our cosmetic formulations, wholesale orders, or personal skincare advice?</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info-card">
+              <h2 style="margin-bottom: 24px; font-size: 1.6rem;">Concierge Details</h2>
+              
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem; margin-bottom: 4px;">Luxury Flagship Boutique</h4>
+                  <p style="color: var(--text-muted); font-size: 0.9rem;">745 Fifth Avenue, Suite 1200<br>New York, NY 10151</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem; margin-bottom: 4px;">Email Support</h4>
+                  <p style="color: var(--text-muted); font-size: 0.9rem;">concierge@aureliabeauty.com<br>care@aureliabeauty.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem; margin-bottom: 4px;">Customer Care Line</h4>
+                  <p style="color: var(--text-muted); font-size: 0.9rem;">+1 (800) 555-AURELIA<br>Mon - Sat: 9:00 AM - 7:00 PM EST</p>
+                </div>
+              </div>
+
+              <div style="margin-top: 30px;">
+                <button class="btn btn-whatsapp" style="width: 100%;" onclick="window.open('https://wa.me/1234567890?text=Hello%20Aurelia%20Concierge!%20I%20have%20a%20question.', '_blank')">
+                  <i class="fa-brands fa-whatsapp" style="font-size: 1.3rem;"></i> Direct WhatsApp Concierge
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-form-card">
+              <h2 style="margin-bottom: 24px; font-size: 1.6rem;">Send A Message</h2>
+              <form id="contactForm">
+                <div class="form-group">
+                  <label class="form-label" for="contactName">Full Name *</label>
+                  <input type="text" id="contactName" class="form-input" placeholder="e.g. Isabella Rose" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contactEmail">Email Address *</label>
+                  <input type="email" id="contactEmail" class="form-input" placeholder="e.g. isabella@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contactPhone">Phone Number</label>
+                  <input type="tel" id="contactPhone" class="form-input" placeholder="+1 (555) 000-0000">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contactMessage">Message *</label>
+                  <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="How can our beauty team assist you today?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">
+                  Send Message <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- GOOGLE MAPS MOCKUP IFRAME -->
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.183883838275!2d-73.97405292342371!3d40.76346293479639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f97bf12cd9%3A0x6b4f73801f92e3!2s745%205th%20Ave%2C%20New%20York%2C%20NY%2010151!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-body">
+      <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modalProductContent">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/1234567890?text=Hello%20Aurelia%20Cosmetics!%20I'd%20like%20to%20inquire%20about%20your%20products." 
+     target="_blank" 
+     class="floating-whatsapp" 
+     title="Chat with us on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTop" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="/" class="brand-logo" data-view="home">
+            <div class="brand-icon"><i class="fa-solid fa-gem"></i></div>
+            AURELIA <span>BEAUTY</span>
+          </a>
+          <p>Elevating daily beauty rituals with pure organic botanicals, dermatologist-tested efficacy, and high-end luxury aesthetics.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="/" data-view="home">Home Page</a>
+            <a href="/about" data-view="about">About Our Brand</a>
+            <a href="/products" data-view="products">Full Collection</a>
+            <a href="/contact" data-view="contact">Contact & Concierge</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Categories</h4>
+          <div class="footer-links">
+            <a href="/products" data-view="products">Organic Skincare</a>
+            <a href="/products" data-view="products">Haircare Oils</a>
+            <a href="/products" data-view="products">Velvet Lipsticks</a>
+            <a href="/products" data-view="products">Luxury Fragrances</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Concierge Contact</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">745 Fifth Avenue, New York, NY</p>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">concierge@aureliabeauty.com</p>
+          <p style="color: var(--accent); font-weight: 700; font-size: 1rem;">+1 (800) 555-AURELIA</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aurelia Cosmetics Inc. All rights reserved.</p>
+        <div class="developer-watermark">
+          <i class="fa-solid fa-code-sparkles"></i> Developed by <span class="watermark-brand">Shaivika Groups</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DEVELOPER WATERMARK FLOATING BADGE -->
+  <div class="floating-watermark" title="Developed by Shaivika Groups">
+    <i class="fa-solid fa-code"></i> Developed by <span>Shaivika Groups</span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
