@@ -3,6 +3,11 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Render Backend API Base URL
+  const API_BASE = (window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost' || window.location.hostname.includes('onrender.com'))
+    ? ''
+    : 'https://cosmotics-website.onrender.com';
+
   // Global State
   const state = {
     products: [],
@@ -123,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // -------------------------------------------------------------
   async function fetchProducts() {
     try {
-      const res = await fetch('/api/products');
+      const res = await fetch(`${API_BASE}/api/products`);
       const data = await res.json();
       if (data.status === 'success') {
         state.products = data.products;
@@ -136,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchFeaturedProducts() {
     try {
-      const res = await fetch('/api/featured-products');
+      const res = await fetch(`${API_BASE}/api/featured-products`);
       const data = await res.json();
       if (data.status === 'success') {
         state.featuredProducts = data.products;
@@ -149,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchCategories() {
     try {
-      const res = await fetch('/api/categories');
+      const res = await fetch(`${API_BASE}/api/categories`);
       const data = await res.json();
       if (data.status === 'success') {
         state.categories = data.categories;
@@ -355,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // -------------------------------------------------------------
   async function loadProductDetail(productId) {
     try {
-      const res = await fetch(`/api/product/${productId}`);
+      const res = await fetch(`${API_BASE}/api/product/${productId}`);
       const data = await res.json();
 
       if (data.status === 'success') {
@@ -601,7 +606,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         try {
-          const res = await fetch('/api/contact', {
+          const res = await fetch(`${API_BASE}/api/contact`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)
@@ -634,7 +639,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!email) return;
 
         try {
-          const res = await fetch('/api/newsletter', {
+          const res = await fetch(`${API_BASE}/api/newsletter`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email })

@@ -2,9 +2,17 @@
 [build]
   publish = "."
 
+# Proxy API requests directly to Render Backend
+[[redirects]]
+  from = "/api/*"
+  to = "https://cosmotics-website.onrender.com/api/:splat"
+  status = 200
+  force = true
+
 # Redirect SPA single-page routing for static site
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
 
